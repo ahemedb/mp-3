@@ -33,6 +33,7 @@ const TableData = styled.td`
 
   return (
     <Main>
+            <title>References | Resume</title>
       <h2>References</h2>
       <ReferenceTable>
         <thead>

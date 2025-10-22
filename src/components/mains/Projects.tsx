@@ -43,6 +43,7 @@ const ProjectList = styled.ul`
 
   return (
     <Main>
+          <title>Projects | Resume</title>
       <ProjectCard>
         <ProjectTitle>
           <ProjectLink

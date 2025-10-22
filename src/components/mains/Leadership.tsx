@@ -71,6 +71,7 @@ const LeadershipList = styled.ul`
 
   return (
     <Main>
+         <title>Leadership and Professional Development | Resume</title>
       <LeadershipCard>
         <LeadershipHeader>
           <LeadershipName>Management Leadership for Tomorrow</LeadershipName>

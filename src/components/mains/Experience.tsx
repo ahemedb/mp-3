@@ -58,6 +58,7 @@ const ExperienceList = styled.ul`
 
   return (
     <Main>
+      <title>Experience | Resume</title>
       <ExperienceCard>
         <ExperienceHeader>
           <CompanyRole>

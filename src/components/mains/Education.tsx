@@ -57,6 +57,7 @@ const Paragraph = styled.p`
 export default function Education() {
   return (
     <Main>
+        <title>Education | Resume</title>
       <EducationCard>
         <SchoolName>Boston University</SchoolName>
         <SchoolLocation>Boston, MA</SchoolLocation>
