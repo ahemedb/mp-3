@@ -1,6 +1,5 @@
 import { useState } from "react"
-import styled
- from "styled-components";
+import styled from "styled-components";
 export default function Calculator(){
 
     const[inputOne,setInputOne]=useState("");
@@ -90,7 +89,6 @@ const CalcButton = styled.button`
 const Output = styled.h3`
   font-size: 20px;
   font-weight: bold;
-  color: ${({ $isNegative }) => ($isNegative ? "red" : "#2f4f2f")};
   margin-top: 10px;
 
   @media screen and (max-width: 1000px) {
@@ -116,7 +114,7 @@ let result = 1;
         result = 1 / pos;
 
     }
-    setResult(result);
+    setResult(String(result));
 }
 
 
@@ -155,7 +153,9 @@ let result = 1;
         <CalcButton onClick={clearCalc}> Clear </CalcButton>
       </ButtonGroup>
 
-      <Output $isNegative={Number(result) < 0}>{result}</Output>
+    <Output style={{ color: Number(result) < 0 ? "red" : "#2f4f2f" }}>{result}</Output>
+
+
     </CalculatorSection>
   </>
 );
